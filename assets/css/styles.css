@@ -1107,4 +1107,34 @@ footer {
     transform: translateY(0);
 }
 
+/* ─── PULL QUOTE ─── */
+  .pull-quote {
+    margin: 36px 0;
+    padding: 28px 32px;
+    border-left: 3px solid var(--gold);
+    background: var(--gold-dim);
+    position: relative;
+  }
+  .pull-quote::before {
+    content: '\201C';
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--gold);
+    opacity: 0.2;
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    line-height: 1;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.15rem !important;
+    line-height: 1.6 !important;
+    color: var(--gold-pale) !important;
+    margin: 0 !important;
+    position: relative;
+    z-index: 1;
+  }
+
 /* End of extracted stylesheet */
